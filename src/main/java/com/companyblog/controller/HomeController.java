@@ -35,9 +35,13 @@ public class HomeController {
         userDetailsMap.put("email", (String) userDetails.get("email"));        
         session.setAttribute("userName", userDetailsMap.get("name"));
         session.setAttribute("email", userDetailsMap.get("email"));
-        Users user = new Users();
-        user.setEmail(userDetailsMap.get("email"));
-        usersDaoImpl.save(user);
+        Users existingUser = usersDaoImpl.getUserUsingEmailId(userDetailsMap.get("email"));
+        if(existingUser ==null)
+        {
+          Users user = new Users();
+          user.setEmail(userDetailsMap.get("email"));
+          usersDaoImpl.saveUser(user);
+        }
         return new ModelAndView("home").addObject("userName",session.getAttribute("userName") );
     }
 

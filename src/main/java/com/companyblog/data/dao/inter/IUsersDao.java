@@ -6,12 +6,21 @@
 package com.companyblog.data.dao.inter;
 
 import com.companyblog.data.model.Users;
+import java.util.List;
 
 /**
  *
  * @author Venkatesh
  */
 public interface IUsersDao {
-    public boolean save(Users users);
-            
+    public boolean saveUser(Users users);
+    
+    public Users getUserUsingEmailId(String emailId);
+    
+    public List<Users> getUserList();
+    
+    public boolean saveOrUpdateUser(Users users);
+    
+    public boolean deleteUser(Users user);
+                                
 }
