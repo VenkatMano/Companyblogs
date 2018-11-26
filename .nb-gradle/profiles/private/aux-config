@@ -5,39 +5,41 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
       <group>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/java/com/companyblog/config/AppInitializer.java</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/resources/application.properties</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/build.gradle</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/java/com/companyblog/config/WebSecurityConfiguration.java</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/webapp/WEB-INF/jsp/expose.jsp</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/java/com/companyblog/Application.java</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/java/com/companyblog/controller/ExposeController.java</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/webapp/WEB-INF/jsp/home.jsp</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/java/com/companyblog/controller/HomeController.java</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/java/com/companyblog/config/ApplicationConfigurerAdapter.java</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/java/com/companyblog/model/ExposePage.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/dao/inter/IUsersDao.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/Application.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/config/ApplicationConfigurerAdapter.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/webapp/WEB-INF/jsp/expose.jsp</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/model/ExposePage.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/config/WebSecurityConfiguration.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/model/Users.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/config/AppInitializer.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/resources/application.properties</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/controller/HomeController.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/controller/ExposeController.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/dao/inter/IAnswersDao.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/model/Answers.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/model/QuestionsUserId.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/webapp/WEB-INF/jsp/home.jsp</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/dao/impl/UsersDaoImpl.java</file>
       </group>
     </open-files>
-    <editor-bookmarks lastBookmarkId="0" xmlns="http://www.netbeans.org/ns/editor-bookmarks/2"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
       <group>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/java/com/companyblog/data/model/Answersquestions.java</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/java/com/companyblog/data/dao/inter/IUsersDao.java</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/java/com/companyblog/data/dao/impl/UsersDaoImpl.java</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/build.gradle</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/java/com/companyblog/data/model/AnswersquestionsId.java</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/java/com/companyblog/Application.java</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/java/com/companyblog/controller/ExposeController.java</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/java/com/companyblog/controller/HomeController.java</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/java/com/companyblog/data/model/Users.java</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/java/com/companyblog/model/ExposePage.java</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/java/com/companyblog/config/AppInitializer.java</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/resources/application.properties</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/java/com/companyblog/config/WebSecurityConfiguration.java</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/webapp/WEB-INF/jsp/expose.jsp</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/java/com/companyblog/data/model/Answers.java</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/webapp/WEB-INF/jsp/home.jsp</file>
-        <file>file:/E:/Company%20Blog/Project/CompanyBlogsLatest/src/main/java/com/companyblog/config/ApplicationConfigurerAdapter.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/dao/inter/IUsersDao.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/Application.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/config/ApplicationConfigurerAdapter.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/webapp/WEB-INF/jsp/expose.jsp</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/model/ExposePage.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/config/WebSecurityConfiguration.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/model/Users.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/config/AppInitializer.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/resources/application.properties</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/controller/HomeController.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/controller/ExposeController.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/dao/inter/IAnswersDao.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/model/Answers.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/webapp/WEB-INF/jsp/home.jsp</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/dao/impl/UsersDaoImpl.java</file>
       </group>
     </open-files>
   </auxiliary>

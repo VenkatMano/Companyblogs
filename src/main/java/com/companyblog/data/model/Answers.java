@@ -1,16 +1,15 @@
 package com.companyblog.data.model;
-// Generated Oct 13, 2018 10:23:32 AM by Hibernate Tools 4.3.1
+// Generated Nov 26, 2018 9:37:50 PM by Hibernate Tools 4.3.1
 
 
-import java.util.HashSet;
-import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 /**
@@ -24,15 +23,22 @@ public class Answers  implements java.io.Serializable {
 
 
      private Integer id;
+     private Questions questions;
+     private Users users;
      private String topic;
-     private Set<Answersquestions> answersquestionses = new HashSet<Answersquestions>(0);
 
     public Answers() {
     }
 
-    public Answers(String topic, Set<Answersquestions> answersquestionses) {
+	
+    public Answers(Questions questions, Users users) {
+        this.questions = questions;
+        this.users = users;
+    }
+    public Answers(Questions questions, Users users, String topic) {
+       this.questions = questions;
+       this.users = users;
        this.topic = topic;
-       this.answersquestionses = answersquestionses;
     }
    
      @Id @GeneratedValue(strategy=IDENTITY)
@@ -47,6 +53,26 @@ public class Answers  implements java.io.Serializable {
         this.id = id;
     }
 
+@ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name="QuestionId", nullable=false)
+    public Questions getQuestions() {
+        return this.questions;
+    }
+    
+    public void setQuestions(Questions questions) {
+        this.questions = questions;
+    }
+
+@ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name="UserId", nullable=false)
+    public Users getUsers() {
+        return this.users;
+    }
+    
+    public void setUsers(Users users) {
+        this.users = users;
+    }
+
     
     @Column(name="Topic", length=70)
     public String getTopic() {
@@ -55,15 +81,6 @@ public class Answers  implements java.io.Serializable {
     
     public void setTopic(String topic) {
         this.topic = topic;
-    }
-
-@OneToMany(fetch=FetchType.LAZY, mappedBy="answers")
-    public Set<Answersquestions> getAnswersquestionses() {
-        return this.answersquestionses;
-    }
-    
-    public void setAnswersquestionses(Set<Answersquestions> answersquestionses) {
-        this.answersquestionses = answersquestionses;
     }
 
 

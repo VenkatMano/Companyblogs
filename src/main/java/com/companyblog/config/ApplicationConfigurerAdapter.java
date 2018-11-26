@@ -12,11 +12,7 @@ package com.companyblog.config;
 import com.companyblog.data.dao.impl.UsersDaoImpl;
 import com.companyblog.data.dao.inter.IUsersDao;
 import com.companyblog.data.model.Answers;
-import com.companyblog.data.model.Answersquestions;
-import com.companyblog.data.model.AnswersquestionsId;
 import com.companyblog.data.model.Questions;
-import com.companyblog.data.model.QuestionsUser;
-import com.companyblog.data.model.QuestionsUserId;
 import com.companyblog.data.model.Users;
 import javax.sql.DataSource;
 import org.apache.commons.dbcp.BasicDataSource;
@@ -67,12 +63,8 @@ public class ApplicationConfigurerAdapter extends WebMvcConfigurerAdapter {
 	@Bean
 	public SessionFactory sessionFactory() {
 		return new LocalSessionFactoryBuilder(getDataSource())
-                   .addAnnotatedClass(Answers.class)
-                   .addAnnotatedClass(Answersquestions.class)
-                   .addAnnotatedClass(AnswersquestionsId.class)
-                   .addAnnotatedClass(Questions.class)
-                   .addAnnotatedClass(QuestionsUserId.class)
-                   .addAnnotatedClass(QuestionsUser.class)
+                   .addAnnotatedClass(Answers.class)                  
+                   .addAnnotatedClass(Questions.class)                 
                    .addAnnotatedClass(Users.class)     
 		   .buildSessionFactory();
 	}

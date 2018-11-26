@@ -1,5 +1,5 @@
 package com.companyblog.data.model;
-// Generated Oct 13, 2018 10:23:32 AM by Hibernate Tools 4.3.1
+// Generated Nov 26, 2018 9:37:50 PM by Hibernate Tools 4.3.1
 
 
 import java.util.HashSet;
@@ -10,6 +10,8 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -24,17 +26,21 @@ public class Questions  implements java.io.Serializable {
 
 
      private Integer id;
+     private Users users;
      private String topic;
-     private Set<Answersquestions> answersquestionses = new HashSet<Answersquestions>(0);
-     private Set<QuestionsUser> questionsUsers = new HashSet<QuestionsUser>(0);
+     private Set answerses = new HashSet(0);
 
     public Questions() {
     }
 
-    public Questions(String topic, Set<Answersquestions> answersquestionses, Set<QuestionsUser> questionsUsers) {
+	
+    public Questions(Users users) {
+        this.users = users;
+    }
+    public Questions(Users users, String topic, Set answerses) {
+       this.users = users;
        this.topic = topic;
-       this.answersquestionses = answersquestionses;
-       this.questionsUsers = questionsUsers;
+       this.answerses = answerses;
     }
    
      @Id @GeneratedValue(strategy=IDENTITY)
@@ -49,6 +55,16 @@ public class Questions  implements java.io.Serializable {
         this.id = id;
     }
 
+@ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name="UserId", nullable=false)
+    public Users getUsers() {
+        return this.users;
+    }
+    
+    public void setUsers(Users users) {
+        this.users = users;
+    }
+
     
     @Column(name="Topic", length=70)
     public String getTopic() {
@@ -60,21 +76,12 @@ public class Questions  implements java.io.Serializable {
     }
 
 @OneToMany(fetch=FetchType.LAZY, mappedBy="questions")
-    public Set<Answersquestions> getAnswersquestionses() {
-        return this.answersquestionses;
+    public Set getAnswerses() {
+        return this.answerses;
     }
     
-    public void setAnswersquestionses(Set<Answersquestions> answersquestionses) {
-        this.answersquestionses = answersquestionses;
-    }
-
-@OneToMany(fetch=FetchType.LAZY, mappedBy="questions")
-    public Set<QuestionsUser> getQuestionsUsers() {
-        return this.questionsUsers;
-    }
-    
-    public void setQuestionsUsers(Set<QuestionsUser> questionsUsers) {
-        this.questionsUsers = questionsUsers;
+    public void setAnswerses(Set answerses) {
+        this.answerses = answerses;
     }
 
 
