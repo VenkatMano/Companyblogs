@@ -9,16 +9,16 @@
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/Application.java</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/config/ApplicationConfigurerAdapter.java</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/webapp/WEB-INF/jsp/expose.jsp</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/model/Questions.java</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/model/ExposePage.java</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/config/WebSecurityConfiguration.java</file>
-        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/model/Users.java</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/config/AppInitializer.java</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/resources/application.properties</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/controller/HomeController.java</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/controller/ExposeController.java</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/dao/inter/IAnswersDao.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/dao/impl/AnswersDaoImpl.java</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/model/Answers.java</file>
-        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/model/QuestionsUserId.java</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/webapp/WEB-INF/jsp/home.jsp</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/dao/impl/UsersDaoImpl.java</file>
       </group>
@@ -29,14 +29,15 @@
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/Application.java</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/config/ApplicationConfigurerAdapter.java</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/webapp/WEB-INF/jsp/expose.jsp</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/model/Questions.java</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/model/ExposePage.java</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/config/WebSecurityConfiguration.java</file>
-        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/model/Users.java</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/config/AppInitializer.java</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/resources/application.properties</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/controller/HomeController.java</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/controller/ExposeController.java</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/dao/inter/IAnswersDao.java</file>
+        <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/dao/impl/AnswersDaoImpl.java</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/model/Answers.java</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/webapp/WEB-INF/jsp/home.jsp</file>
         <file>file:/E:/Company%20Blog/Companyblogs/src/main/java/com/companyblog/data/dao/impl/UsersDaoImpl.java</file>

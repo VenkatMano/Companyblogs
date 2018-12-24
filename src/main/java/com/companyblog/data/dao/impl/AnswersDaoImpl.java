@@ -87,7 +87,7 @@ public class AnswersDaoImpl implements IAnswersDao {
         Session session = sessionFactory.openSession();
         try {
             Criteria answerCriteria = session.createCriteria(Answers.class);
-            answerCriteria.add(Restrictions.eq("id", questionId));
+            answerCriteria.add(Restrictions.eq("QuestionId", questionId));
             List<Answers> answerList = answerCriteria.list();
             if (answerList != null) {
                 return answerList;
@@ -99,6 +99,34 @@ public class AnswersDaoImpl implements IAnswersDao {
             session.close();
             return null;
         }
+        finally{
+            session.close();
+        }
       
+    }
+    
+    @Override
+    public List<Answers> getAnswersByUserId(int userId)
+    {
+        Session session = sessionFactory.openSession();
+        try
+        {
+        Criteria answerCriteria = session.createCriteria(Answers.class);
+        answerCriteria.add(Restrictions.eq("UserId", userId));
+        List<Answers> answerList = answerCriteria.list();
+        if(!answerList.isEmpty())
+        {
+            return answerList;
+        }
+        }
+        catch(Exception ex)
+        {
+            session.close();
+            return null;
+        }
+        finally{
+            session.close();
+            return null;
+        }
     }
 }

@@ -22,4 +22,6 @@ public interface IAnswersDao {
     
     public List<Answers> getAnswersByQuestionId(int questionId);
     
+    public List<Answers> getAnswersByUserId(int userId);
+    
 }
