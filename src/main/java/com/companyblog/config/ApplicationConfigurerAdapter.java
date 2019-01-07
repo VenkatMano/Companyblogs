@@ -9,7 +9,11 @@ package com.companyblog.config;
  *
  * @author Venkatesh
  */
+import com.companyblog.data.dao.impl.AnswersDaoImpl;
+import com.companyblog.data.dao.impl.QuestionsDaoImpl;
 import com.companyblog.data.dao.impl.UsersDaoImpl;
+import com.companyblog.data.dao.inter.IAnswersDao;
+import com.companyblog.data.dao.inter.IQuestionsDao;
 import com.companyblog.data.dao.inter.IUsersDao;
 import com.companyblog.data.model.Answers;
 import com.companyblog.data.model.Questions;
@@ -59,6 +63,18 @@ public class ApplicationConfigurerAdapter extends WebMvcConfigurerAdapter {
      public IUsersDao usersDao()
      {
          return new UsersDaoImpl();
+     }
+     
+     @Bean
+     public IAnswersDao answerDao()
+     {
+         return new AnswersDaoImpl();
+     }
+     
+     @Bean
+     public IQuestionsDao questionsDao()
+     {
+         return new QuestionsDaoImpl();
      }
 	@Bean
 	public SessionFactory sessionFactory() {
